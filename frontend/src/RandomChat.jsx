@@ -13,7 +13,7 @@ export default function RandomChat() {
   // Connect to socket when component mounts
   useEffect(() => {
     // In production, replace with your actual server URL
-    const newSocket = io('/');
+    const newSocket = io('https://random-chat-api.onrender.com/');
     setSocket(newSocket);
 
     return () => {
